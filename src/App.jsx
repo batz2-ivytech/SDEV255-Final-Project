@@ -10,7 +10,11 @@ import {
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Placeholder from "./pages/Placeholder";
+import CourseShopping from "./pages/CourseShopping";
+import CourseReview from "./pages/CourseReview";
+import TeacherCourseList from "./pages/TeacherCourseList";
+import StudentList from "./pages/StudentList";
+import StudentReview from "./pages/StudentReview";
 import "./App.css";
 
 function Portal() {
@@ -65,12 +69,12 @@ function Portal() {
           <>
             <Route
               path="/student/shopping"
-              element={<Placeholder title="Course Shopping" />}
+              element={<CourseShopping title="Course Shopping" />}
             />
 
             <Route
               path="/student/review"
-              element={<Placeholder title="Course Review" />}
+              element={<CourseReview title="Course Review" />}
             />
           </>
         )}
@@ -79,17 +83,17 @@ function Portal() {
           <>
             <Route
               path="/teacher/courses"
-              element={<Placeholder title="Teacher Course List" />}
+              element={<TeacherCourseList title="Teacher Course List" />}
             />
 
             <Route
               path="/teacher/students"
-              element={<Placeholder title="Student Search" />}
+              element={<StudentList title="Student Search" />}
             />
 
             <Route
               path="/teacher/students/:id"
-              element={<Placeholder title="Student Review" />}
+              element={<StudentReview title="Student Review" />}
             />
           </>
         )}
